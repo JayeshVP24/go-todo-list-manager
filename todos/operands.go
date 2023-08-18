@@ -1,4 +1,4 @@
-package main
+package todos
 
 type Operand int8
 
@@ -7,6 +7,8 @@ const (
 	Remove
 	Show
 )
+
+var ops = []Operand{Add, Remove, Show}
 
 func (o Operand) String() string {
 	switch o {
